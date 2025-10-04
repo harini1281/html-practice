@@ -8,6 +8,12 @@
 <body>
     <h1>Online Survey form</h1>
     <p>Do extend your support by filling this form!</p>
+    <h3>Instructions to be Followed</h3>
+    <ul>
+        <li>All fields are mandatory.</li>
+        <li>Age should be between 1 and 120.</li>
+        <li>Feedback should be constructive.</li>
+    </ul>
     <form action="#" method="post">
         <!--get input for name-->
         <label for="name">Enter Your Name:</label>
@@ -30,5 +36,23 @@
         <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your suggestions here..."></textarea><br><br>
         <input type="submit" value="Submit">
     </form>
+    <!--Adding table for survey responses-->
+    <h2>Survey responses</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Favorite Food</th>
+            <th>Feedback</th>
+        </tr>
+        <!-- Sample data row -->
+        <tr>
+            <td>John Doe</td>
+            <td>25</td>
+            <td>Pizza</td>
+            <td>Great survey!</td>
+        </tr>
+    </table>
+   
 </body>
 </html>
