@@ -8,5 +8,27 @@
 <body>
     <h1>Online Survey form</h1>
     <p>Do extend your support by filling this form!</p>
+    <form action="#" method="post">
+        <!--get input for name-->
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <!--get input for age-->
+        <label for="age" id="age" name="age">Enter your age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+        <!--Favorite Food-->
+        <label for="food">What is your favorite food?</label>
+        <select id="food" name="food" required>
+            <option value="pizza">pizza</option>
+            <option value="biriyani">biriyani</option>
+            <option value="Fried Rice">Fried Rice</option>
+            <option value="pasta">pasta</option>
+            <option value="burger">burger</option>
+            <option value="noodles">noodles</option>
+        </select><br><br>
+        <!--Feedback area-->
+        <label for="feedback">Any suggestions/feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your suggestions here..."></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
